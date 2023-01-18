@@ -1,9 +1,10 @@
 # EZLanguage
 
 # This is a project of mine where I implement a compiler for my own language called EZ(easy)Language.
-# The compiler is written in C++ and it takes in an EZ source code file and as output, generates assembly code compatible with 32-bit Linux ABI which means that the compiler generates target assembly code only for Linux based machines. For getting the final executable binary, you must assemble the output assembly file
-# using NASM assembler by two terminal commands 
-# nasm -felf32 <generated-assembly-file-name> -o <object-file-name>
+# The compiler is written in C++ and it takes in an EZ source code file and as output, generates assembly code compatible with 32-bit Linux ABI which means that the compiler generates target assembly code only for Linux based machines.
+For getting the final executable binary, you must assemble the output assembly file
+using NASM assembler by two terminal commands 
+nasm -felf32 <generated-assembly-file-name> -o <object-file-name>
 gcc <object-file-name> -o <executable-file-name> -no-pie
 on the Linux machine.
 
